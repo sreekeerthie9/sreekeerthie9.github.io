@@ -1,0 +1,161 @@
+html{
+    scroll-behavior: smooth;
+    background-color:black;
+}
+body{
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+#header ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.container{
+    display: grid;
+    grid-template-rows:15vh 1fr 1fr 0.5fr 35vh;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    grid-template-areas:
+        "head head head head"
+        "obj obj profile profile"
+        "pro pro sk sk"
+        "work work co co"
+        "con con con con"
+}
+#footer{
+    grid-area: foot;
+    text-align: center;
+}
+#cert{
+    grid-area: co;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0),
+        rgb(126, 115, 15)
+    );
+    color: white;
+    box-shadow: 5px 5px 5px rgb(235, 232, 103);
+    border: 2px solid white;
+}
+#skills{
+    grid-area: sk;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0),
+        rgb(15, 32, 126)
+    );
+    color: white;
+    box-shadow: 5px 5px 5px rgb(136, 165, 219);
+    border: 2px solid white;
+}
+ 
+#image{
+    grid-area: img;
+    text-align: center;
+    box-shadow:5px 5px 5px rgb(3, 153, 246);
+    border-radius: 50%;
+}
+#header{
+    grid-area: head;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px skyblue;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0),
+        rgb(3,153,246)
+    );
+}
+
+#obj{
+    grid-area: obj;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0),
+        rgb(246, 3, 56)
+    );
+    color: white;
+    box-shadow: 5px 5px 5px pink;
+    border: 2px solid white;
+}
+#profile{
+    grid-area:profile;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px whitesmoke;
+}
+#profile img{
+    border-radius: 20px;
+}
+#project{
+    grid-area: pro;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0),
+        rgb(15,126,104)
+    );
+    color: white;
+    box-shadow: 5px 5px 5px rgb(85, 180, 172);
+    border: 2px solid white;
+}
+#wor{
+    grid-area: work;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0),
+        rgb(126,74,15)
+    );
+    color: white;
+    box-shadow: 5px 5px 5px rgb(214, 147, 46);
+    border: 2px solid white;
+}
+#contact{
+    grid-area: con;
+    text-align: center;
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0),
+        #bd3a23
+    );
+    
+    
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px rgb(218, 128, 76);
+}
+.box{
+    border-radius: 20px;
+    padding: 10px;
+}
+a {
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    font-style: italic;
+}
+a:hover{
+    color: yellow;
+}
+#contact a{
+    margin-left: 30px;
+}
+h1{
+    font-family:cursive;
+}
+h2{
+    font-family: cursive;
+}
+h3{
+    font-style: italic;
+} 
